@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Jquery Bult -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="hotflix-assets/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="hotflix-assets/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="hotflix-assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="hotflix-assets/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="hotflix-assets/css/select2.min.css">
+	<link rel="stylesheet" href="hotflix-assets/css/ionicons.min.css">
+	<link rel="stylesheet" href="hotflix-assets/css/admin.css">
+
+	<!-- Favicons -->
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+		integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+	<link rel="icon" type="image/png" href="hotflix-assets/icon/favicon-32x32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="hotflix-assets/icon/favicon-32x32.png">
+
+	<meta name="description" content="RM Creator">
+	<meta name="keywords" content="RM Creator">
+	<meta name="author" content="RM Creator">
+	<title>Add Audio</title>
+
+
+	<style type="text/css">
+		.lable-text {
+			color: #929292 !important;
+			font-size: 12px;
+		}
+
+		.hide {
+			display: none;
+		}
+
+		.show {
+			display: block;
+		}
+	</style>
+
+	<link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/
+ui-lightness/jquery-ui.css' rel='stylesheet'>
+
+</head>
+
+<body>
+	<!-- header -->
+
+
+
+
+
+
+
+	<!-- ================================
+       START USER CANVAS MENU
+================================= -->
+
+	<header class="header">
+		<div class="header__content">
+			<!-- header logo -->
+			<a href="index.jsp" class="header__logo">
+				<img src="img/rmclogo.png" alt="" style="height:36px; width: 36px;">
+			</a>
+			<!-- end header logo -->
+
+			<!-- header menu btn -->
+			<button class="header__btn" type="button">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+			<!-- end header menu btn -->
+		</div>
+	</header>
+
+
+
+
+
+
+	<script type="text/javascript">
+		setTimeout(function () {
+			$("#subscribeModal").modal("show");
+		}, 10);
+	</script>
+	<!-- ================================
+       END DASHBOARD NAV
+================================= -->
+	<!-- end header -->
+
+	<!-- sidebar -->
+
+
+
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<div class="sidebar">
+		<!-- sidebar logo -->
+		<a href="#" class="" style="width: 100%; text-align: center;">
+			<img src="img/rmclogo.png" alt="" style="height: 50px; width: 50px;">
+		</a>
+		<!-- end sidebar logo -->
+
+		<!-- sidebar user -->
+		<div class="sidebar__user">
+			<div class="sidebar__user-img">
+				<img src="hotflix-assets/img/user.svg" alt="">
+			</div>
+
+			<div class="sidebar__user-title">
+				<span>111136</span>
+				<p>RAKESH </p>
+			</div>
+
+			<a class="sidebar__user-btn" href="logout">
+				<i class="fa-solid fa-right-from-bracket"></i>
+			</a>
+		</div>
+		<!-- end sidebar user -->
+
+		<!-- sidebar nav -->
+		<div class="sidebar__nav-wrap">
+			<ul class="sidebar__nav">
+				<li class="sidebar__nav-item">
+					<a href="user-home.html" class="sidebar__nav-link"> <i class="fa-solid fa-gauge"></i>
+						<span>Dashboard</span></a>
+				</li>
+
+				<!-- collapse -->
+				<li class="sidebar__nav-item">
+					<a class="sidebar__nav-link" data-toggle="collapse" href="#collapseMenu" role="button"
+						aria-expanded="false" aria-controls="collapseMenu"><i class="fa-solid fa-list"></i>
+						<span>Items</span> <i class="fa-solid fa-caret-down"></i></a>
+
+					<ul class="collapse sidebar__menu" id="collapseMenu">
+						<li><a href="add-video.html">Add Music</a></li>
+						<!-- 						<li><a href="add-video?type=video">Add Music Video</a></li> -->
+						<!-- 						<li><a href="add-video?type=film">Add Film</a></li> -->
+
+						<li><a href="list-videos.html">Correction Items</a></li>
+						<li><a href="list-videos.html">Final Releasing</a></li>
+
+
+					</ul>
+				</li>
+				<!-- end collapse -->
+
+				<!-- collapse -->
+				<li class="sidebar__nav-item">
+					<a class="sidebar__nav-link" data-toggle="collapse" href="#collapseLabel" role="button"
+						aria-expanded="false" aria-controls="collapseMenu"><i class="fa fa-tag "></i> <span>Label</span>
+						<i class="fa-solid fa-caret-down"></i></a>
+
+					<ul class="collapse sidebar__menu" id="collapseLabel">
+						<li><a href="add-label.html">Add Label</a></li>
+
+						<!-- 						<li><a href="list-label.html ?status=Other">Correction Label</a></li> -->
+						<!-- 						<li><a href="list-label.html ?status=Approved">Final Label</a></li> -->
+						<li><a href="list-label.html ">Final Label</a></li>
+
+
+					</ul>
+				</li>
+				<!-- end collapse -->
+
+				<!-- collapse -->
+				<li class="sidebar__nav-item">
+					<a class="sidebar__nav-link" data-toggle="collapse" href="#collapseFund" role="button"
+						aria-expanded="false" aria-controls="collapseMenu"><i class="fa fa-wallet "></i>
+						<span>Fund</span> <i class="fa-solid fa-caret-down"></i></a>
+
+					<ul class="collapse sidebar__menu" id="collapseFund">
+						<!-- 						<li><a href="add-fund">Add Fund</a></li> -->
+						<li><a href="list-fund.html">Fund History</a></li>
+
+
+					</ul>
+				</li>
+				<!-- end collapse -->
+
+				<li class="sidebar__nav-item">
+					<a href="view-profile.html" class="sidebar__nav-link"><i class="fa-regular fa-user"></i>
+
+						<span>Account</span></a>
+				</li>
+
+				<li class="sidebar__nav-item">
+					<a href="fund-transfer-history.html" class="sidebar__nav-link"><i class="fa fa-pie-chart"></i>
+						<span>Revenue Report</span></a>
+				</li>
+
+				<li class="sidebar__nav-item">
+					<a href="withdrawal-history.html" class="sidebar__nav-link"><i class="fa fa-wallet"></i>
+						<span>Revenue Request</span></a>
+				</li>
+
+				<!-- collapse -->
+				<li class="sidebar__nav-item">
+					<a class="sidebar__nav-link" data-toggle="collapse" href="#collapseRevenue" role="button"
+						aria-expanded="false" aria-controls="collapseMenu"><i class="fa fa-tag "></i>
+						<span>Revenue</span> <i class="fa-solid fa-caret-down"></i></a>
+
+					<ul class="collapse sidebar__menu" id="collapseRevenue">
+						<li><a href="withdrawal.html">Revenue Request</a></li>
+						<li><a href="withdrawal-history.html">Revenue History</a></li>
+					</ul>
+				</li>
+				<!-- end collapse -->
+
+
+				<li class="sidebar__nav-item">
+					<a href="user-claim-request.html" class="sidebar__nav-link"><i class="fa fa-wallet"></i> <span>Claim
+							Releasing Request</span></a>
+				</li>
+
+				<!-- collapse -->
+				<!-- <li class="sidebar__nav-item">
+					<a class="sidebar__nav-link" data-toggle="collapse" href="#collapseMenuTakedown" role="button" aria-expanded="false" aria-controls="collapseMenu"><i class="fa fa-question-circle"></i> <span>Takedown</span> <i class="fa-solid fa-caret-down"></i></a>
+
+					<ul class="collapse sidebar__menu" id="collapseMenuTakedown">
+						<li><a href="user-takedown-request">Takedown Request</a></li>
+						<li><a href="takedown-history">Takedown History</a></li>
+					</ul>
+				</li> -->
+				<!-- end collapse -->
+
+				<!-- collapse -->
+				<li class="sidebar__nav-item">
+					<a class="sidebar__nav-link" data-toggle="collapse" href="#collapseMenuHelp" role="button"
+						aria-expanded="false" aria-controls="collapseMenu"><i class="fa fa-question-circle"></i>
+						<span>Helpdesk</span> <i class="fa-solid fa-caret-down"></i></a>
+
+					<ul class="collapse sidebar__menu" id="collapseMenuHelp">
+						<li><a href="help-desk.html">Help Request</a></li>
+						<li><a href="help-desk-history.html">Help History</a></li>
+					</ul>
+				</li>
+				<!-- end collapse -->
+
+			</ul>
+		</div>
+		<!-- end sidebar nav -->
+
+		<!-- sidebar copyright -->
+		<div class="sidebar__copyright">© Smilemusic, 2023—2024. <br>Create by <a href="#" target="_blank">Rakesh Panwar</a></div>
+			
+		<!-- end sidebar copyright -->
+	</div>
+
+
+
+	<script type="text/javascript">
+		$(function () {
+			var current = location.pathname.split('/')[1];
+			console.log(current);
+			$('.nav li a').each(function () {
+				var $this = $(this);
+				// if the current path is like this link, make it active
+				if ($this.attr('href').indexOf(current) !== -1) {
+					$(this).addClass('active');
+
+				}
+			})
+		})
+	</script>
+
+
+
+	<!-- end sidebar -->
+
+	<!-- main content -->
+	<main class="main">
+		<div class="container-fluid">
+			<div class="row">
+				<!-- main title -->
+				<div class="col-12">
+					<div class="main__title">
+						<h2>Add Audio</h2>
+					</div>
+				</div>
+				<!-- end main title -->
+
+
+
+				<!-- form -->
+				<div class="col-12">
+					<form action="add-video.html" method="post" class="form">
+						<div class="row row--form">
+
+							<input type="hidden" value="audio" name="type" required="required">
+
+							<div class="col-12 col-md-12 form__content">
+								<div class="row row--form">
+									<div class="col-12">
+										<label class="lable-text" style="color: #fff;">SONG*</label>
+										<input type="text" name="title" class="form__input" placeholder="Song Name"
+											required="required">
+									</div>
+
+									<!-- <div class="col-12">
+										<label class="lable-text"style="color: #fff;">Description</label>
+										<textarea id="text" name="description" class="form__textarea" placeholder="Description"></textarea>
+									</div> -->
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">FILM/ALBUM*</label>
+										<input type="text" name="album" class="form__input" placeholder="Film/Album"
+											required="required">
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">ARTIST1/SINGER*</label>
+										<input type="text" name="singer" class="form__input"
+											placeholder="Ex. Artist/Singet feat. If any Name" required="required">
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">STAR CAST</label>
+										<input type="text" name="starCast" class="form__input"
+											placeholder="Star Cast Name if any">
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">GENRE/CATEGORY*</label>
+										<select class="js-example-basic-multiple1" name="genre" id="genre"
+											required="required">
+											<option value="">Genre</option>
+
+											<option value="Single">Single</option>
+											<option value="Album">Album</option>
+											<option value="Film">Film</option>
+											<option value="Folk">Folk</option>
+											<option value="Devotional">Devotional</option>
+											<option value="Traditional">Traditional</option>
+											<option value="IndiPop">IndiPop</option>
+											<option value="Instrumental">Instrumental</option>
+											<option value="Western Classical">Western Classical</option>
+											<option value="Hindustani Classical">Hindustani Classical</option>
+											<option value="Ghazal">Ghazal</option>
+											<option value="Spiritual">Spiritual</option>
+											<option value="Hip Hop">Hip Hop</option>
+											<option value="Rock">Rock</option>
+											<option value="Electronic">Electronic</option>
+										</select>
+									</div>
+
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">SUB CATEGORY*</label>
+										<select class="js-example-basic-multiple1" name="subCategory" id="category"
+											required="required">
+											<option value="">Sub Category</option>
+											<option value="Regional Pop">Regional Pop</option>
+											<option value="Modern Song">Modern Song</option>
+											<option value="Soundtrack">Soundtrack</option>
+											<option value="Aarti">Aarti</option>
+											<option value="Bhajan">Bhajan</option>
+											<option value="Geet">Geet</option>
+											<option value="Kirtan">Kirtan</option>
+											<option value="Mantra">Mantra</option>
+											<option value="Chalisa">Chalisa</option>
+											<option value="Marriage song">Marriage song</option>
+											<option value="Raksha Bandhan">Raksha Bandhan</option>
+											<option value="Naat">Naat</option>
+											<option value="Qawwals">Qawwals</option>
+											<option value="Indipop">Indipop</option>
+											<option value="Holi">Holi</option>
+											<option value="Diwali">Diwali</option>
+											<option value="Gidda">Gidda</option>
+										</select>
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">MOOD*</label>
+										<select class="js-example-basic-multiple1" name="mood" id="mood"
+											required="required">
+											<option value="">Mood</option>
+
+											<option value="Happy">Happy</option>
+											<option value="Sad">Sad</option>
+											<option value="Excited">Excited</option>
+											<option value="Romantic">Romantic</option>
+											<option value="Calm">Calm</option>
+											<option value="Passion">Passion</option>
+
+										</select>
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">Label*</label>
+										<select class="js-example-basic-multiple1" name="label" id="label"
+											required="required">
+											<option value="">Label</option>
+
+
+										</select>
+									</div>
+
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">MUSICAL & LITERARY WORKS*</label>
+										<input type="text" name="musicDirector" class="form__input"
+											placeholder="Music Director Name" required="required">
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">SOUND RECORDING RIGHTS*</label>
+										<input type="text" name="publisher" class="form__input"
+											placeholder="sound Recording Rights" required="required">
+									</div>
+
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">LYRICIST*</label>
+										<input type="text" name="lyrics" class="form__input" placeholder="Song Lyrics*"
+											required="required">
+									</div>
+
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">COMPOSER</label>
+										<input type="text" name="composer" class="form__input" placeholder="Composer">
+									</div>
+
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">DIRECTOR</label>
+										<input type="text" name="videoDirector" class="form__input"
+											placeholder="Director">
+									</div>
+
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">PRODUCER</label>
+										<input type="text" name="producer" class="form__input" placeholder="Producer">
+									</div>
+
+
+									<div class="col-12 col-sm-12 col-lg-6">
+										<label class="lable-text" style="color: #fff;">EXPLICIT VERSION*:</label>
+										<div class="form__radio row m-0"
+											style="background-color: #f3f3f3;border: 2px solid #ddd;height: 46px;width: 100%;border-radius: 6px;">
+
+											<div class="col-4 col-sm-6 col-lg-4">
+												<input id="type4" type="radio" name="explicitVersion" value="Yes"
+													required="required">
+												<label for="type4">Yes</label>
+											</div>
+											<div class="col-4 col-sm-6 col-lg-4">
+												<input id="type5" type="radio" name="explicitVersion" value="No"
+													required="required">
+												<label for="type5">No</label>
+											</div>
+											<div class="col-4 col-sm-6 col-lg-4">
+												<input id="type6" type="radio" name="explicitVersion" value="Cleaned"
+													required="required">
+												<label for="type6">Cleaned</label>
+											</div>
+										</div>
+									</div>
+
+
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">LANGUAGE*</label>
+										<select class="js-example-basic-multiple1" name="language" id="language"
+											required>
+											<option value="">Language</option>
+											<option value="Hindi">Hindi</option>
+											<option value="Punjabi">Punjabi</option>
+											<option value="English">English</option>
+											<option value="Haryanvi">Haryanvi</option>
+											<option value="Bhojpuri">Bhojpuri</option>
+											<option value="Bengali">Bengali</option>
+											<option value="Chhattisgarhi">Chhattisgarhi</option>
+											<option value="Tamil">Tamil</option>
+											<option value="Urdu">Urdu</option>
+											<option value="Rajasthani">Rajasthani</option>
+											<option value="Marathi">Marathi</option>
+											<option value="Gujarati">Gujarati</option>
+											<option value="Instrumental">Instrumental</option>
+										</select>
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-6">
+										<label class="lable-text" style="color: #fff;">CONTENT TYPE (ALBUM
+											CATEGORY)*:</label>
+										<div class="form__radio row m-0"
+											style="background-color: #f3f3f3;border: 2px solid #ddd;height: 46px;width: 100%;border-radius: 6px;">
+											<div class="col-4 col-sm-6 col-lg-4 p-1">
+												<input id="type1" type="radio" name="contentType" value="Original"
+													required="required">
+												<label for="type1">Original</label>
+											</div>
+											<div class="col-4 col-sm-6 col-lg-4 p-1">
+												<input id="type2" type="radio" name="contentType" value="Cover Song"
+													required="required">
+												<label for="type2">Cover Song</label>
+											</div>
+											<div class="col-4 col-sm-6 col-lg-4 p-0">
+												<input id="type3" type="radio" name="contentType" value="Instrumental"
+													required="required">
+												<label for="type3">Instrumental</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">CONTENT ID*:</label>
+										<div class="form__radio row m-0"
+											style="background-color: #f3f3f3;border: 2px solid #ddd;height: 46px;width: 100%;border-radius: 6px;">
+											<div class="col-6 col-sm-6 col-lg-6 p-1">
+												<input id="contentId1" type="radio" name="contentId12" value="Yes"
+													required="required">
+												<label for="contentId1">Yes</label>
+											</div>
+											<div class="col-6 col-sm-6 col-lg-6 p-1">
+												<input id="contentId2" type="radio" name="contentId12" value="No"
+													required="required">
+												<label for="contentId2">No</label>
+											</div>
+										</div>
+									</div>
+
+									<!-- <div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text"style="color: #fff;">ISRC</label>
+										<input type="text" name="isrc" class="form__input" placeholder="ISRC">
+									</div> -->
+
+									<!-- <div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text"style="color: #fff;">Track Duration*</label>
+										<input type="time" step="1" name="trackDuration" id="trackDuration" id="trackDuration" class="form__input" placeholder="Track Duration*" required="required">
+									</div> -->
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">DATE OF MUSIC RELEASE*</label>
+										<input type="text" name="releasingDate" id="releasingDate" class="form__input"
+											autocomplete="off" placeholder="Releasing Date*" required="required">
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">GO LIVE DATE*</label>
+										<input type="text" name="goliveDate" id="goliveDate" class="form__input"
+											autocomplete="off" placeholder="Go Live Date*" required="required">
+									</div>
+								</div>
+
+								<label class="lable-text" style="color: #fff;">CRBT CUTS:</label>
+								<div class="radio_btns">
+									<div class="form__radio row m-0 col-lg-6">
+										<input id="crbtCutYes" type="radio" name="contentId" value="Yes"
+											required="required" onClick="showCRBT()">
+										<label for="crbtCutYes" class="mr-3">Yes</label>
+										<input id="crbtCutNo" type="radio" name="contentId" value="No"
+											required="required" onClick="hideCRBT()" checked>
+										<label for="crbtCutNo">No</label>
+									</div>
+								</div>
+								<div class="row row--form hide" id="showCrbt1">
+									<span style="color: #000;">CRBT 1</span>
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">CRBT Title 1</label>
+										<input type="text" name="crbtTitle" class="form__input"
+											placeholder="CRBT Title 1*">
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">CRBT Time 1</label>
+										<input type="text" step="1" name="crbtTime" class="form__input timepicker"
+											placeholder="00:00:00">
+									</div>
+								</div>
+
+								<div class="row row--form hide" id="showCrbt2">
+									<span style="color: #000;">CRBT 2</span>
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">CRBT Title 2</label>
+										<input type="text" name="crbtTitle2" class="form__input"
+											placeholder="CRBT Title 2*">
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text" style="color: #fff;">CRBT Time 2</label>
+										<input type="text" step="1" name="crbtTime2" class="form__input"
+											placeholder="00:00:00">
+									</div>
+								</div>
+
+								<!-- <div class="row row--form hide" id="showCrbt3">	
+									<span style="color: #000;">CRBT 3</span>
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text"style="color: #fff;">CRBT Title 3</label>
+										<input type="text" name="crbtTitle3" class="form__input" placeholder="CRBT Title 3*">
+									</div>
+
+									<div class="col-12 col-sm-6 col-lg-3">
+										<label class="lable-text"style="color: #fff;">CRBT Time 3</label>
+										<input type="time" step="1" name="crbtTime3" class="form__input" placeholder="CRBT Time 3*">
+									</div> -->
+							</div>
+
+
+
+
+						</div>
+
+
+
+						<div class="col-12">
+							<div class="row row--form">
+
+								<div class="col-12">
+									<button type="submit" class="form__btn">Add</button>
+								</div>
+							</div>
+						</div>
+				</div>
+				</form>
+			</div>
+			<!-- end form -->
+		</div>
+		</div>
+	</main>
+	<!-- end main content -->
+
+	<!-- JS -->
+	<script src="hotflix-assets/js/jquery-3.5.1.min.js"></script>
+	<script src="hotflix-assets/js/bootstrap.bundle.min.js"></script>
+	<script src="hotflix-assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="hotflix-assets/js/jquery.mousewheel.min.js"></script>
+	<script src="hotflix-assets/js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="hotflix-assets/js/select2.min.js"></script>
+	<script src="hotflix-assets/js/admin.js"></script>
+
+
+	<script type="text/javascript">
+
+
+		function showCRBT() {
+			var text1 = document.getElementById("showCrbt1");
+			var text2 = document.getElementById("showCrbt2");
+			var text3 = document.getElementById("showCrbt3");
+
+			text1.style.display = "flex";
+			text2.style.display = "flex";
+			text3.style.display = "flex";
+		}
+		function hideCRBT() {
+			var text1 = document.getElementById("showCrbt1");
+			var text2 = document.getElementById("showCrbt2");
+			var text3 = document.getElementById("showCrbt3");
+
+			text1.style.display = "none";
+			text2.style.display = "none";
+			text3.style.display = "none";
+		}
+
+
+
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+	</script>
+	<script>
+		$(function () {
+			$("#releasingDate").datepicker({
+				changeMonth: true,
+				changeYear: true,
+				numberOfMonths: 1,
+				dateFormat: 'yy-mm-dd',
+				minDate: "+7d"
+			});
+		});
+	</script>
+	<script>
+		$(function () {
+			$("#goliveDate").datepicker({
+				changeMonth: true,
+				changeYear: true,
+				numberOfMonths: 1,
+				dateFormat: 'yy-mm-dd',
+				minDate: "+7d"
+			});
+		});
+	</script>
+
+</body>
+
+</html>
